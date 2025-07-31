@@ -37,3 +37,7 @@ const districtrouter = require("./Router/district.js")
 app.use("/district", districtrouter);
 
 app.listen(4000)
+
+app.get('/', (req, res) => {
+  res.send('Backend API is working 🎉');
+});
